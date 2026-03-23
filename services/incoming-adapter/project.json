@@ -1,0 +1,11 @@
+{
+  "name": "incoming-adapter",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "services/incoming-adapter/src",
+  "targets": {
+    "dev": {
+      "command": "node --watch --env-file=.env --import tsx services/incoming-adapter/src/server.ts"
+    }
+  }
+}

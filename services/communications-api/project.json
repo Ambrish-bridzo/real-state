@@ -1,0 +1,11 @@
+{
+  "name": "communications-api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "services/communications-api/src",
+  "targets": {
+    "dev": {
+      "command": "node --watch --env-file=.env --import tsx services/communications-api/src/server.ts"
+    }
+  }
+}

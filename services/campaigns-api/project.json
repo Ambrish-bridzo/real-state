@@ -1,0 +1,11 @@
+{
+  "name": "campaigns-api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "services/campaigns-api/src",
+  "targets": {
+    "dev": {
+      "command": "node --watch --env-file=.env --import tsx services/campaigns-api/src/server.ts"
+    }
+  }
+}

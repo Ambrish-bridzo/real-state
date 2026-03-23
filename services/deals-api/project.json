@@ -1,0 +1,11 @@
+{
+  "name": "deals-api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "services/deals-api/src",
+  "targets": {
+    "dev": {
+      "command": "node --watch --env-file=.env --import tsx services/deals-api/src/server.ts"
+    }
+  }
+}

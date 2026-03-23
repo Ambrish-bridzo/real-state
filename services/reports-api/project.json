@@ -1,0 +1,11 @@
+{
+  "name": "reports-api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "services/reports-api/src",
+  "targets": {
+    "dev": {
+      "command": "node --watch --env-file=.env --import tsx services/reports-api/src/server.ts"
+    }
+  }
+}

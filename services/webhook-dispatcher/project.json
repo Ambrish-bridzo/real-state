@@ -1,0 +1,11 @@
+{
+  "name": "webhook-dispatcher",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "services/webhook-dispatcher/src",
+  "targets": {
+    "dev": {
+      "command": "node --watch --env-file=.env --import tsx services/webhook-dispatcher/src/server.ts"
+    }
+  }
+}

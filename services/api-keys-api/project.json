@@ -1,0 +1,11 @@
+{
+  "name": "api-keys-api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "services/api-keys-api/src",
+  "targets": {
+    "dev": {
+      "command": "node --watch --env-file=.env --import tsx services/api-keys-api/src/server.ts"
+    }
+  }
+}
